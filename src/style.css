@@ -1,1 +1,25 @@
-/* styles go here */
+fieldset {
+  margin-bottom: 20px;
+}
+
+.first {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+.radio {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.rate {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.down {
+  margin-top: 10px;
+}
