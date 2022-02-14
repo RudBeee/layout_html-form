@@ -12,99 +12,114 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="block">
         <legend>Personal information</legend>
-        <label>
+        <label class="clickable">
           Surname:
           <input 
-            class="first"
+            class="input__field"
             type="text" 
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
-        <label>
+        <label class="clickable">
           Name:
           <input 
-            class="first"
+            class="input__field"
             type="text"
             autocomplete="off"
             minlength="5"
-            maxlength="20">
+            maxlength="20"
+          >
         </label>
-        <label>
+        <label class="clickable">
           How old are You?
           <input
-            class="first"
+            class="input__field"
             type="number"
             min="1"
             max="100"
-            value="12">
+            value="12"
+          >
         </label>
-        <label>
+        <label class="clickable">
           Full date of birth:
           <input
-            class="first" 
-            type="date">
+            class="input__field"
+            type="date"
+          >
         </label>
-        <label>
+        <label class="clickable">
           I accept the term of the agreement
           <input 
-            type="checkbox">
+            class="input__field"
+            type="checkbox"
+          >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="block">
         <legend>Registration</legend>
-        <label>
+        <label class="clickable">
           E-mail:
           <input
-            class="first"
+            class="input__field"
             type="email"
-            placeholder="email@example.com">
+            placeholder="email@example.com"
+          >
         </label>
-        <label>
+        <label class="clickable">
           Password:
           <input
-            type="password">
+            class="input__field"
+            type="password"
+          >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="block">
         <legend>An interesting fact about you!</legend>
         <div>
           Do you love cats?
-          <label class="radio">
+          <label class="radio clickable">
             <input
-              class="first"
+              class="input__field"
               type="radio" 
               name="loveCats" 
-              value="Y"> Yes
+              value="Y"
+            > 
+            Yes
           </label>
 
-          <label class="radio">
+          <label class="radio clickable">
             <input 
-              class="first"
+              class="input__field"
               type="radio" 
               name="loveCats" 
-              value="N"> No
+              value="N"
+            >
+            No
           </label>
 
         </div>
 
-        <label>
+        <label class="clickable">
           What is your favorite color?
           <input 
-          class="first"
-          type="color">
+          class="input__field"
+          type="color"
+          >
         </label>
-        <label>
+        <label class="clickable">
           What time do you go to bed?
           <input 
-            class="first"
+            class="input__field"
             type="time" 
             name="time" 
             min="21:00" 
             max="00:00" 
-            required>
+            required
+          >
         </label>
-        <label>
+        <label class="clickable">
           What are your favorite brand of cars?
           <select name="auto" multiple>
             <option value="BMW">BMW</option>
@@ -114,24 +129,26 @@
         </label>
         <div>
           How do you rate our work?
-          <label class="rate">
+          <label class="rate clickable">
             <input 
+            class="input__field"
             type="range" 
             id="volume" 
             name="volume"
             min="0" 
             max="10"
-            value="0">
+            value="0"
+            >
           </label>
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="block"> 
         <legend>Additional info:</legend>
-        <label>
+        <label class="clickable">
           Comments:
           <textarea name="rate" cols="20" rows="2"></textarea>
         </label>
-        <label class="down">
+        <label class="down clickable">
           Would you recommend us?
           <select name="recommend">
             <option value="yes">yes</option>
